@@ -1,0 +1,8 @@
+setup => pip install -r requirements.txt
+install click => pip install click
+
+train => python train.py --train-stock data/GOOGL.csv --val-stock data/GOOGL_2018.csv
+
+evaluate => python evaluate.py --eval-stock data/BTC-USD_Val.csv --window-size 10 --model-name model_GOOGL_30 --debug
+
+trade => 
